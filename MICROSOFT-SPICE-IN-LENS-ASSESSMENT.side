@@ -1,0 +1,63 @@
+{
+  "id": "ef9ca27c-c2ed-4967-9bdc-e6153f0ab2d3",
+  "version": "2.0",
+  "name": "MICROSOFT-SPICE-IN-LENS-ASSESSMENT",
+  "url": "https://jkpsc.nic.in/",
+  "tests": [{
+    "id": "75e6579a-01fc-436c-a85e-055ea8b990dc",
+    "name": "DownloadPDF",
+    "commands": [{
+      "id": "88bbc0cb-5809-457a-b23a-9f8e0b5ede16",
+      "comment": "",
+      "command": "open",
+      "target": "https://jkpsc.nic.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcfed6dd-b078-4179-8c5d-38cea3dc11f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cd3a9af-abe4-435a-a754-9ff2ffa88feb",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a733485-32ad-4077-998b-7a43382dc2cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa:nth-child(1) > a",
+      "targets": [
+        ["linkText=Onlin Applications are invited for J and K Combined Competitive (Mains) Examination, 2023.", "linkText"],
+        ["css=.fa:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[@onclick='return true;'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='whatsNew']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Pdf/Downloader1.ashx?nid=15621&type=n')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li/a", "xpath:position"],
+      ],
+      "value": ""
+    }, {
+      "id": "3f7023ed-ee2c-4c03-aaa6-662f373ae464",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ac638e90-0843-4269-8379-7d2cb068ada3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["75e6579a-01fc-436c-a85e-055ea8b990dc"]
+  }],
+  "urls": ["https://jkpsc.nic.in/"],
+  "plugins": []
+}
